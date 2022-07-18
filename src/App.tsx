@@ -53,12 +53,19 @@ function App() {
      setCurrentQuestion(0);
      setShowScore(false);
    }
-   const next2 = () =>{
-     if(currentQuestion < CorrectAnswers.length + 1){
-       setCurrentQuestion(currentQuestion - 1 );
+    const next2 = () =>{
+    if(currentQuestion < CorrectAnswers.length + 1 && currentQuestion !== 49){
+      setCurrentQuestion(currentQuestion + 1 );
 
-    }
    }
+  }
+  const backbtn2 = () =>{
+    if(currentQuestion !== 0){
+      setCurrentQuestion(currentQuestion - 1 );
+
+   }
+  }
+   
    
   
   
@@ -94,10 +101,27 @@ function App() {
         </div>  
      
             
-        
-            
-              <Button  className="next-question" onClick={next2}>Next Question
-         </Button>
+         <div className="answer-section">
+                {CorrectAnswers[currentQuestion].answerBank.map((userAnswer) =>(
+                  <li className="answerList">
+                    <button className="answerbtn"
+                      disabled={disable}
+                      key = {userAnswer.answer}
+                    
+                     >
+                      {userAnswer.answer}
+                    </button>
+                  </li>
+
+                ))}
+               </div>
+               <div className="buttons">
+        <Button className="back" variant="success" onClick={backbtn2}>Back
+          </Button>
+          <Button className="next-question" onClick={next2}>Next Question
+          </Button>
+          
+        </div>
   
          <div className="StartTest">
          <Button className="StartTest" variant="info" onClick={retake}>Retake</Button>
