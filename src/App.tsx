@@ -90,7 +90,7 @@ function App() {
          
          <h5 className="sm">Summary Below</h5>
          <div className="question-section">
-               
+              
                <div className="question-count">
                    Question {currentQuestion + 1 } / {CorrectAnswers.length}   
                </div>
@@ -148,7 +148,7 @@ function App() {
        <div>
          
               <div className="question-section">
-               
+                <h1 className="head2">ACA QUIZ APPICATION</h1>
                <div className="question-count">
                    Question {currentQuestion + 1 } / {QuestionBank.length}   
                </div>
