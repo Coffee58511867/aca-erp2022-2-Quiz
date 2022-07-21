@@ -3,7 +3,7 @@ let CorrectAnswers = [
         question: "Which command create new react app ? ",
         answerBank: [
             {answer: "C. npx create-react-app my-app", isCorrect: true},
-           
+            {summary: "To create a new react app we are using this command"},
            
         ],
     },
@@ -12,6 +12,7 @@ let CorrectAnswers = [
         answerBank: [
      
             {answer: "C. name of app", isCorrect: true},
+            {summary: "We First need to write command and then name of our app starting with lowercase"},
            
         ],
     },
@@ -21,6 +22,9 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "C. create-react-typecript my-app", isCorrect: true},
+            {summary: "To create a new react app with typecript add --template typescript after name of app"},
+
+   
            
         ],
     },
@@ -29,6 +33,8 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "C. npm start", isCorrect: true},
+            {summary: "To start development server we go to terminal and navigate to our project then type npm start."},
+           
            
             
         ],
@@ -38,12 +44,14 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "D. 3000", isCorrect: true},
+            {summary: "To default local port is 3000"},
         ],
     },
     {
         question: "To develop and run React code, Node.js is required ",
         answerBank: [
             {answer: "A. True", isCorrect: true},
+            {summary: "Node js must be installed to run react code"},
            
         
         ],
@@ -134,6 +142,7 @@ let CorrectAnswers = [
         question: "Which command add bootstrap to app ? ",
         answerBank: [
             {answer: "A. npm install react-bootstarp bootstrap", isCorrect: true},
+            {summary: "We use the above command to install react-bootstrap to react app "},
           
         ],
     },
@@ -148,6 +157,7 @@ let CorrectAnswers = [
         question: "Which command is used to upload local repository content to remote repository? ",
         answerBank: [
             {answer: "A. git push", isCorrect: true},
+            {summary: "It is used to push commits from local repository to a remote repository "},
            
         ],
     },
@@ -156,6 +166,7 @@ let CorrectAnswers = [
         answerBank: [
       
             {answer: "D. git clone", isCorrect: true},
+            {summary: "It is used to point to an existing repo and make a clone in a new directory at another location "},
         ],
     },
     {
@@ -171,6 +182,7 @@ let CorrectAnswers = [
         answerBank: [
            
             {answer: "B. git init", isCorrect: true},
+            {summary: "git init is used to create a new repository it can aslo be used to convert a existing project to Git "},
            
         ],
     },
@@ -178,6 +190,7 @@ let CorrectAnswers = [
         question: "Which command add one or more to starging area ? ",
         answerBank: [
             {answer: "A. git add .", isCorrect: true},
+            {summary: "git add command add a change in working directory to the staging area it tells Git that you want to include updates to particular file "},
            
         ],
     },
@@ -186,6 +199,7 @@ let CorrectAnswers = [
         answerBank: [
            
             {answer: "C. git diff", isCorrect: true},
+            {summary: "git diff is used to view changes between the two commit "},
           
         ],
     },
@@ -194,6 +208,7 @@ let CorrectAnswers = [
         answerBank: [
       
             {answer: "B. git reset", isCorrect: true},
+            {summary: "git reset unstage all files and directories "},
            
         ],
     },
@@ -202,6 +217,7 @@ let CorrectAnswers = [
         answerBank: [
            
             {answer: "B. git reset commit", isCorrect: true},
+            {summary: "git reset commit undo changes associated with specific commit "},
             
         ],
     },
@@ -209,7 +225,8 @@ let CorrectAnswers = [
         question: "Which command list all files to be committed? ",
         answerBank: [
            
-            {answer: "B. git status", isCorrect: true},
+            {answer: "B. git diff-tree", isCorrect: true},
+            {summary: "git diff -tree is considered as a prefered way of listing files in commit "},
           
         ],
     },
@@ -218,6 +235,7 @@ let CorrectAnswers = [
         answerBank: [
        
             {answer: "B. git status", isCorrect: true},
+            {summary: "Git status displays thestate of working directory and staging area"},
         
         ],
     },
@@ -226,6 +244,7 @@ let CorrectAnswers = [
         answerBank: [
            
             {answer: "C. Staged", isCorrect: true},
+            {summary: "Staged files are files that are ready to be committed to repository you are working on"},
          
         ],
     },
@@ -233,6 +252,7 @@ let CorrectAnswers = [
         question: "Which of the following is true when you use the following command ? git add -A ",
         answerBank: [
             {answer: "A. All new and updated files are staged", isCorrect: true},
+
             
            
         ],
@@ -242,6 +262,7 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "B. pull", isCorrect: true},
+            {summary: "git pull is used to fetch and download content from remote repository and immediately update local repository."},
          
         ],
     },
@@ -250,6 +271,7 @@ let CorrectAnswers = [
         answerBank: [
          
             {answer: "C. git commit -m 'I am Coding'", isCorrect: true},
+            {summary: "W e write git commit command followed by -m and then message in quotations"},
            
         ],
     },
@@ -258,14 +280,16 @@ let CorrectAnswers = [
         answerBank: [
          
             {answer: "B. push changes from local to central", isCorrect: true},
+            {summary: "git commit Command is one of the core primary function of Git it is used to create snapshot of staged changes"},
           
         ],
     },
     {
-        question: "Command use to connect remote repo with local repo? ",
+        question: "Command used to connect remote repo with local repo? ",
         answerBank: [
   
             {answer: "D. git remote add", isCorrect: true},
+            {summary: "git remote command is used to make remote connections such as connectiong local to remote"},
         ],
     },
     {
@@ -281,6 +305,7 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "B. False", isCorrect: true},
+            {summary: "Container does not provides full width instead .container-flud classname does"},
            
         ],
     },
@@ -289,6 +314,7 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "B. <button onClick={this.foo}>", isCorrect: true},
+            
         
         ],
     },
@@ -297,6 +323,7 @@ let CorrectAnswers = [
         answerBank: [
          
             {answer: "B. style{{fontSize:'12px'}}",  isCorrect: true},
+            {summary: "In React when we are styling using inline method we are supposed to use two curly braces"},
          
         ],
     },
@@ -305,6 +332,7 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "B. User-interface Framework",  isCorrect: true},
+            {summary: "React is a javascript library for building user interfaces"},
            
            
         ],
@@ -314,6 +342,7 @@ let CorrectAnswers = [
         answerBank: [
          
             {answer: "B. state and props",  isCorrect: true},
+            {summary: "There are basically two ways to handle data in react which is through state and props  "},
           
            
         ],
@@ -323,6 +352,7 @@ let CorrectAnswers = [
         answerBank: [
      
             {answer: "B. 1",  isCorrect: true},
+            {summary: "1 is said to be valid return type"},
           
            
         ],
@@ -332,6 +362,7 @@ let CorrectAnswers = [
         answerBank: [
             
             {answer: "C. Both of the above", isCorrect: true},
+            {summary: "Main application of babel is as compiler"},
            
            
         ],
@@ -341,6 +372,7 @@ let CorrectAnswers = [
         answerBank: [
          
             {answer: "C. Props", isCorrect: true},
+            {summary: "We are using props to pass from one component to another"},
            
            
         ],
@@ -350,6 +382,7 @@ let CorrectAnswers = [
         answerBank: [
            
             {answer: "B. this.setState",  isCorrect: true},
+            {summary: "To change state in React we use this.setState() method when the value in state object changes"},
           
            
         ],
@@ -359,6 +392,7 @@ let CorrectAnswers = [
         answerBank: [
            
             {answer: "B. Is a way to identify the newly added element",  isCorrect: true},
+            {summary: "Props help in identifying newly added elements"},
          
            
         ],
@@ -367,6 +401,7 @@ let CorrectAnswers = [
         question: "Which is used to keep the value of components unique?",
         answerBank: [
             {answer: "A. Key", isCorrect: true},
+            {summary: "React uses a unique key prop of each child of the list to create relationship between components and DOM"},
            
            
         ],
@@ -375,6 +410,7 @@ let CorrectAnswers = [
         question: "Which one of the following is correct to style className?",
         answerBank: [
             {answer: "A. .classname", isCorrect: true},
+            {summary: "In React we are using .className "},
           
            
         ],
@@ -384,7 +420,7 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "B. text-align: center",  isCorrect: true},
-           
+            {summary: "To set text to center we use text-align: center"},
            
         ],
     },
@@ -393,7 +429,8 @@ let CorrectAnswers = [
         answerBank: [
           
             {answer: "C. backgroud-color: yellow", isCorrect: true},
-           
+            {summary: "To change backgroud color we write backgroud-color followed the color we want"},
+            
            
         ],
     },

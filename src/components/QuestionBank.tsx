@@ -244,7 +244,7 @@ let QuestionBank = [
         question: "Which command list all files to be committed? ",
         answerBank: [
             {answer: "A. git push", isCorrect: false},
-            {answer: "B. git status", isCorrect: true},
+            {answer: "B. git diff -tree", isCorrect: true},
             {answer: "C. git list", isCorrect: false},
             {answer: "D. git clone", isCorrect: false},
         ],
@@ -335,7 +335,7 @@ let QuestionBank = [
             {answer: "A. <button onClick={this.foo()}>", isCorrect: false},
             {answer: "B. <button onClick={this.foo}>", isCorrect: true},
             {answer: "C. <button onclick={this.foo}>", isCorrect: false},
-            {answer: "D. <button onClick={this.foo}>", isCorrect: false},
+            {answer: "D. <button onClick={this.foo()}>", isCorrect: false},
         ],
     },
     {

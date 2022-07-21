@@ -97,3 +97,11 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.summary {
+    margin-top: 2px;
+}
+
+.Reasons {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

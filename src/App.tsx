@@ -115,6 +115,19 @@ function App() {
 
                 ))}
                </div>
+
+               <div className="summary">
+                   {CorrectAnswers[currentQuestion].answerBank.map((summa) => (
+                    
+                      <p className="Reasons">
+                        {summa.summary}
+                      </p>
+                      
+                    
+
+                   ))}
+
+               </div>
                <div className="buttons">
         <Button className="back" variant="success" onClick={backbtn2}>Back
           </Button>
