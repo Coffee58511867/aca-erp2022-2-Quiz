@@ -11,12 +11,13 @@ function App() {
   let [score,SetScore] = useState(0);
   let [showScore, setShowScore] = useState(false);
   let [disable, setDisable] = useState(false);
+  let [disable2, setDisable2] = useState(true);
   
  
    
   const submit = (isCorrect: boolean) => {
    setDisable(true);
-     
+   setDisable2(false); 
    if(isCorrect){
        
        SetScore(score + 1);
@@ -27,7 +28,7 @@ function App() {
    const next = ()=>{
      
      setDisable(false);
-    
+     setDisable2(true);
      if(currentQuestion < QuestionBank.length - 1){
         setCurrentQuestion(currentQuestion + 1 );
 
@@ -65,10 +66,6 @@ function App() {
 
    }
   }
-   
-   
-  
-  
  return (
    <>
   
@@ -174,7 +171,7 @@ function App() {
        <div className="buttons">
        <Button className="back" variant="success" onClick={backbtn}>Back
          </Button>
-         <Button  className="next-question" onClick={next}>Next Question
+         <Button disabled={disable2}   className="next-question" onClick={next}>Next Question
          </Button>
          
        </div>
